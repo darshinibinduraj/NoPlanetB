@@ -637,7 +637,7 @@
 					  <div class="form-group form-check">
 						<label class="form-check-label" for="exampleCheck1">Forgot password</label>
 					  </div>
-					  <button type="button" class="btn btn-primary">Submit</button>
+					  <button type="button" id="logUser" class="btn btn-primary">Submit</button>
 					</form>
 				</div>
 		  </div>
@@ -801,8 +801,8 @@
 			$(".alert").alert('close')
 		}
 
-		var btnLogin = document.getElementById("btnLogin");
-		btnLogin.onclick = function () {
+		var btnlogUser = document.getElementById("logUser");
+		btnlogUser.onclick = function () {
 			window.location.href = "user.html";
 		}
 
