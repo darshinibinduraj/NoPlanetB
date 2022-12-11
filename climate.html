@@ -624,7 +624,7 @@
 		<span class="close text-right">&times;</span>
 			<div class="row">
 				<div class="container d-flex justify-content-center mt-4">
-					<form method="post" action="user.html">
+					<form>
 					  <div class="form-group">
 						<label for="exampleInputEmail1">Email address</label>
 						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
@@ -637,7 +637,7 @@
 					  <div class="form-group form-check">
 						<label class="form-check-label" for="exampleCheck1">Forgot password</label>
 					  </div>
-					  <button type="submit" class="btn btn-primary">Submit</button>
+					  <button type="button" class="btn btn-primary">Submit</button>
 					</form>
 				</div>
 		  </div>
@@ -799,6 +799,11 @@
 		btnRegister.onclick = function () {
 			registerModal.style.display = "none";
 			$(".alert").alert('close')
+		}
+
+		var btnLogin = document.getElementById("btnLogin");
+		btnLogin.onclick = function () {
+			window.location.href = "user.html";
 		}
 
 
